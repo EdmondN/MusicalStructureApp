@@ -15,7 +15,7 @@ public class DanceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.music_list);
-
+        
         // Create a list of Music
         final ArrayList<Music> musics = new ArrayList<Music>();
         musics.add(new Music("Top 1", "Breathe - Jax Jones Feat. Ina Wroldsen"));

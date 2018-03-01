@@ -18,19 +18,49 @@
         </activity>
         <activity
             android:name=".DanceActivity"
-            android:label="@string/category_dance" />
+            android:label="@string/category_dance"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".HiphopActivity"
-            android:label="@string/category_hiphop" />
+            android:label="@string/category_hiphop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".PopActivity"
-            android:label="@string/category_pop" />
+            android:label="@string/category_pop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".LatinActivity"
-            android:label="@string/category_latin" />
+            android:label="@string/category_latin"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".PlayerActivity"
-            android:label="@string/category_play" />
+            android:label="@string/category_play"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>

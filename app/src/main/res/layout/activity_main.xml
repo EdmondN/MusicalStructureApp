@@ -1,35 +1,40 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/love_music"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textViewCharts"
-        style="@style/Top10Charts"
-        android:text="@string/top10charts" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textViewDance"
-        style="@style/DanceStyle"
-        android:text="@string/dance" />
+        <TextView
+            android:id="@+id/textViewCharts"
+            style="@style/Top10Charts"
+            android:text="@string/top10charts" />
 
-    <TextView
-        android:id="@+id/textViewHiphop"
-        style="@style/HiphopStyle"
-        android:text="@string/hiphop" />
+        <TextView
+            android:id="@+id/textViewDance"
+            style="@style/DanceStyle"
+            android:text="@string/dance" />
 
-    <TextView
-        android:id="@+id/textViewPop"
-        style="@style/PopStyle"
-        android:text="@string/pop" />
+        <TextView
+            android:id="@+id/textViewHiphop"
+            style="@style/HiphopStyle"
+            android:text="@string/hiphop" />
 
-    <TextView
-        android:id="@+id/textViewLatin"
-        style="@style/LatinStyle"
-        android:text="@string/latin" />
+        <TextView
+            android:id="@+id/textViewPop"
+            style="@style/PopStyle"
+            android:text="@string/pop" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/textViewLatin"
+            style="@style/LatinStyle"
+            android:text="@string/latin" />
+
+    </LinearLayout>
+</ScrollView>
