@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/music_main_background"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/now_playing"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="255dp"
+        android:drawableLeft="@android:drawable/ic_lock_silent_mode_off"
+        android:drawablePadding="20dp"
+        android:text="Now Playing"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewPrevius"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/now_playing"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="120dp"
+        app:srcCompat="@drawable/ic_skip_previous_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPlay"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageViewPrevius"
+        android:layout_below="@+id/now_playing"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+    <ImageView
+        android:id="@+id/imageViewPause"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/now_playing"
+        android:layout_alignLeft="@+id/imageViewPlay"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        app:srcCompat="@drawable/ic_pause_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageViewNext"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/now_playing"
+        android:layout_alignLeft="@+id/imageViewPause"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        app:srcCompat="@drawable/ic_skip_next_black_24dp" />
+
+    <TextView
+        android:id="@+id/chart_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Top 1"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_below="@+id/imageViewPrevius"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="130dp"/>
+
+    <TextView
+        android:id="@+id/trackID_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chart_text_view"
+        tools:text="trackID"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="10dp"/>
+
+
+
+</RelativeLayout>

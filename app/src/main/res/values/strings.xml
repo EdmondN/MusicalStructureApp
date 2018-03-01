@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Music App</string>
+    <string name="category_dance">Dance</string>
+    <string name="category_hiphop">Hip Hop</string>
+    <string name="category_pop">Pop</string>
+    <string name="category_latin">Latin</string>
+</resources>
