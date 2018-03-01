@@ -16,14 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DanceActivity"
-            android:label="@string/category_dance"/>
-        <activity android:name=".HiphopActivity"
-            android:label="@string/category_hiphop"/>
-        <activity android:name=".PopActivity"
-            android:label="@string/category_pop"/>
-        <activity android:name=".LatinActivity"
-            android:label="@string/category_latin"></activity>
+        <activity
+            android:name=".DanceActivity"
+            android:label="@string/category_dance" />
+        <activity
+            android:name=".HiphopActivity"
+            android:label="@string/category_hiphop" />
+        <activity
+            android:name=".PopActivity"
+            android:label="@string/category_pop" />
+        <activity
+            android:name=".LatinActivity"
+            android:label="@string/category_latin" />
+        <activity
+            android:name=".PlayerActivity"
+            android:label="@string/category_play" />
     </application>
 
 </manifest>

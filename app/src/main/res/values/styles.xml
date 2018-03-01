@@ -8,4 +8,142 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Top10Charts">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DanceStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:background">#FF3266</item>
+        <item name="android:drawableLeft">@android:drawable/btn_star_big_on</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HiphopStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:background">#000000</item>
+        <item name="android:drawableLeft">@android:drawable/btn_star_big_on</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PopStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:background">#B2B2FF</item>
+        <item name="android:drawableLeft">@android:drawable/btn_star_big_on</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LatinStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:background">#FD8E09</item>
+        <item name="android:drawableLeft">@android:drawable/btn_star_big_on</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PlayStyle">
+        <item name="android:layout_width">272dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:drawableLeft">@drawable/ic_play_arrow_black_24dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="chartStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="trackID">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NowPlayingStyle">
+        <item name="android:layout_width">272dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">86dp</item>
+        <item name="android:drawableLeft">@android:drawable/ic_lock_silent_mode_off</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PreviusImageStyle">
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_below">@+id/now_playing</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginStart">110dp</item>
+    </style>
+
+    <style name="PlayImageStyle">
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignLeft">@+id/imageViewPrevius</item>
+        <item name="android:layout_below">@+id/now_playing</item>
+        <item name="android:layout_marginLeft">57dp</item>
+        <item name="android:layout_marginStart">57dp</item>
+    </style>
+
+    <style name="PauseImageStyle">
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignLeft">@+id/imageViewPlay</item>
+        <item name="android:layout_below">@+id/now_playing</item>
+        <item name="android:layout_marginLeft">57dp</item>
+        <item name="android:layout_marginStart">57dp</item>
+    </style>
+
+    <style name="NextImageStyle">
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignLeft">@+id/imageViewPause</item>
+        <item name="android:layout_below">@+id/now_playing</item>
+        <item name="android:layout_marginLeft">57dp</item>
+        <item name="android:layout_marginStart">57dp</item>
+    </style>
+
 </resources>

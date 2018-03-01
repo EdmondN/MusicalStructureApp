@@ -4,4 +4,14 @@
     <string name="category_hiphop">Hip Hop</string>
     <string name="category_pop">Pop</string>
     <string name="category_latin">Latin</string>
+    <string name="category_play">Music Player</string>
+    <string name="top10charts">Top 10 Charts</string>
+    <string name="dance">Dance</string>
+    <string name="hiphop">Hip Hop</string>
+    <string name="pop">Pop</string>
+    <string name="latin">Latin</string>
+    <string name="play">Play</string>
+    <string name="top_1">Top 1</string>
+    <string name="trackID">trackID</string>
+    <string name="now_playing">Now Playing</string>
 </resources>

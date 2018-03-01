@@ -11,10 +11,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by Eddie on 28/2/2018.
- */
-
 public class DanceActivity extends AppCompatActivity {
 
     @Override
@@ -23,7 +19,7 @@ public class DanceActivity extends AppCompatActivity {
         setContentView(R.layout.music_list);
 
         // Create a list of Music
-        ArrayList<Music> musics = new ArrayList<Music>();
+        final ArrayList<Music> musics = new ArrayList<Music>();
         musics.add(new Music("Top 1", "Breathe - Jax Jones Feat. Ina Wroldsen"));
         musics.add(new Music("Top 2", "These Days - Rudimental Feat. Jess Glynne, Macklemore & Dan Caplen"));
         musics.add(new Music("Top 3", "The Middle - Zedd, Maren Morris & Grey"));
@@ -33,25 +29,33 @@ public class DanceActivity extends AppCompatActivity {
         musics.add(new Music("Top 7", "Katchi (Ofenbach Vs. Nick Waterhouse)"));
         musics.add(new Music("Top 8", "Crazy - Lost Frequencies & Zonderling"));
         musics.add(new Music("Top 9", "So Far Away - Martin Garrix & David Guetta Feat. Jamie Scott & Romy Dya"));
-        musics.add(new Music("Top 10","La Louze - SHANGUY"));
+        musics.add(new Music("Top 10", "La Louze - SHANGUY"));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create an {@link MusicAdapter}, whose data source is a list of {@link Music}s. The
         // adapter knows how to create list items for each item in the list.
         MusicAdapter adapter =
                 new MusicAdapter(this, musics);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // word_listyout file.
+        // music_list file.
         ListView listView = (ListView) findViewById(R.id.list);
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // Make the {@link ListView} use the {@link MusicAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link Music} in the list.
         listView.setAdapter(adapter);
         // Bind the abstract method to the ListView and gives parameters to its interface
-        ListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        // And It Shows what the Music ChartNumber and TrackID the user clicks
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent playerIntent = new Intent(DanceActivity.this, PlayerActivity.class );
+                Intent playerIntent = new Intent(DanceActivity.this, PlayerActivity.class);
+                Music currentTrack = musics.get(position);
+                Bundle dataForNextActivity = new Bundle();
+
+                String[] musicDataArray = {currentTrack.getChartNumber(), currentTrack.getTrackID()};
+                dataForNextActivity.putStringArray("musicDataArray", musicDataArray);
+
+                playerIntent.putExtras(dataForNextActivity);
                 startActivity(playerIntent);
             }
         });

@@ -10,10 +10,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by Eddie on 28/2/2018.
- */
-
 public class MusicAdapter extends ArrayAdapter<Music> {
 
     public MusicAdapter(Activity context, ArrayList<Music> musics) {

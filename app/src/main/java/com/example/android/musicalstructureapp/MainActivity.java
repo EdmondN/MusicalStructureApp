@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the numbers category
+        // Find the View that shows the Dance category
         TextView dance = (TextView) findViewById(R.id.textViewDance);
 
         // Set a click listener on that View
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+                // Create a new intent to open the {@link DanceActivity}
                 Intent danceIntent = new Intent(MainActivity.this, DanceActivity.class);
 
                 // Start the new activity
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the family category
+        // Find the View that shows the Hiphop category
         TextView hiphop = (TextView) findViewById(R.id.textViewHiphop);
 
         // Set a click listener on that View
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the family category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link FamilyActivity}
+                // Create a new intent to open the {@link HiphopActivity}
                 Intent hiphopIntent = new Intent(MainActivity.this, HiphopActivity.class);
 
                 // Start the new activity
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the colors category
+        // Find the View that shows the Pop category
         TextView pop = (TextView) findViewById(R.id.textViewPop);
 
         // Set a click listener on that View
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the colors category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link ColorsActivity}
+                // Create a new intent to open the {@link PopActivity}
                 Intent popIntent = new Intent(MainActivity.this, PopActivity.class);
 
                 // Start the new activity
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the phrases category
+        // Find the View that shows the Latin category
         TextView latin = (TextView) findViewById(R.id.textViewLatin);
 
         // Set a click listener on that View
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the phrases category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link PhrasesActivity}
+                // Create a new intent to open the {@link LatinActivity}
                 Intent latinIntent = new Intent(MainActivity.this, LatinActivity.class);
 
                 // Start the new activity

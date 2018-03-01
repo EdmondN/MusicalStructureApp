@@ -3,70 +3,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/music_main_background"
+    android:background="@drawable/love_music"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
     <TextView
         android:id="@+id/textViewCharts"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Top 10 Charts"
-        android:textColor="#000000"
-        android:textSize="40sp"
-        android:textStyle="bold" />
+        style="@style/Top10Charts"
+        android:text="@string/top10charts" />
 
     <TextView
         android:id="@+id/textViewDance"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="#FF3266"
-        android:drawableLeft="@android:drawable/btn_star_big_on"
-        android:gravity="center_horizontal"
-        android:text="Dance"
-        android:textColor="#000000"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        style="@style/DanceStyle"
+        android:text="@string/dance" />
 
     <TextView
         android:id="@+id/textViewHiphop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:background="#000000"
-        android:drawableLeft="@android:drawable/btn_star_big_on"
-        android:gravity="center_horizontal"
-        android:text="Hip Hop"
-        android:textColor="#FFFFFF"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        style="@style/HiphopStyle"
+        android:text="@string/hiphop" />
 
     <TextView
         android:id="@+id/textViewPop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:background="#B2B2FF"
-        android:drawableLeft="@android:drawable/ic_media_play"
-        android:gravity="center_horizontal"
-        android:text="Pop"
-        android:textColor="#000000"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        style="@style/PopStyle"
+        android:text="@string/pop" />
+
     <TextView
         android:id="@+id/textViewLatin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Latin"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        android:background="#FD8E09"
-        android:textColor="#000000"
-        android:layout_marginTop="40dp"
-        android:drawableLeft="@android:drawable/ic_media_play"/>
+        style="@style/LatinStyle"
+        android:text="@string/latin" />
 
 </LinearLayout>
