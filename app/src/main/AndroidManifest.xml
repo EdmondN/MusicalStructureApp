@@ -54,12 +54,7 @@
         </activity>
         <activity
             android:name=".PlayerActivity"
-            android:label="@string/category_play"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+            android:label="@string/category_play">
         </activity>
     </application>
 
