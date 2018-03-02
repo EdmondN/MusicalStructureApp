@@ -8,11 +8,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class MusicAdapter extends ArrayAdapter<Music> {
 
-    public MusicAdapter(Activity context, ArrayList<Music> musics) {
+    public MusicAdapter(Activity context, List<Music> musics) {
         super(context, 0, musics);
     }
 

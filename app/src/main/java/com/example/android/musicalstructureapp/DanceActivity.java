@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class DanceActivity extends AppCompatActivity {
 
@@ -15,19 +15,9 @@ public class DanceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.music_list);
-        
+
         // Create a list of Music
-        final ArrayList<Music> musics = new ArrayList<Music>();
-        musics.add(new Music("Top 1", "Breathe - Jax Jones Feat. Ina Wroldsen"));
-        musics.add(new Music("Top 2", "These Days - Rudimental Feat. Jess Glynne, Macklemore & Dan Caplen"));
-        musics.add(new Music("Top 3", "The Middle - Zedd, Maren Morris & Grey"));
-        musics.add(new Music("Top 4", "Best Friend - Sofi Tukker Feat. NERVO & The Knocks & Alisa Ueno"));
-        musics.add(new Music("Top 5", "Drunk Groove - MARUV & BOOSIN"));
-        musics.add(new Music("Top 6", "Cola - CamelPhat & Elderbrook"));
-        musics.add(new Music("Top 7", "Katchi (Ofenbach Vs. Nick Waterhouse)"));
-        musics.add(new Music("Top 8", "Crazy - Lost Frequencies & Zonderling"));
-        musics.add(new Music("Top 9", "So Far Away - Martin Garrix & David Guetta Feat. Jamie Scott & Romy Dya"));
-        musics.add(new Music("Top 10", "La Louze - SHANGUY"));
+        final List<Music> musics = MusicDataStorage.getDanceMusic();
 
         // Create an {@link MusicAdapter}, whose data source is a list of {@link Music}s. The
         // adapter knows how to create list items for each item in the list.

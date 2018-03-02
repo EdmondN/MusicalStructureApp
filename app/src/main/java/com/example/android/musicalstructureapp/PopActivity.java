@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class PopActivity extends AppCompatActivity {
 
@@ -16,19 +16,8 @@ public class PopActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.music_list);
 
-        // Create a list of musics
-        final ArrayList<Music> musics = new ArrayList<Music>();
-        musics.add(new Music("Top 1", "Perfect - Ed Sheeran"));
-        musics.add(new Music("Top 2", "For You (Fifty Shades Freed) - Liam Payne & Rita Ora"));
-        musics.add(new Music("Top 3", "Never Be The Same - Camila Cabello"));
-        musics.add(new Music("Top 4", "Échame La Culpa - Luis Fonsi & Demi Lovato"));
-        musics.add(new Music("Top 5", "Havana - Camila Cabello Feat. Young Thug"));
-        musics.add(new Music("Top 6", "Say Something - Justin Timberlake Feat. Chris Stapleton"));
-        musics.add(new Music("Top 7", "Mine - Bazzi"));
-        musics.add(new Music("Top 8", "Finesse (Remix) - Bruno Mars Feat. Cardi B"));
-        musics.add(new Music("Top 9", "New Rules - Dua Lipa"));
-        musics.add(new Music("Top 10", "IDGAF - Dua Lipa"));
-
+        // Get a list of musics
+        final List<Music> musics = MusicDataStorage.getPopMusic();
         // Create an {@link MusicAdapter}, whose data source is a list of {@link Music}s. The
         // adapter knows how to create list items for each item in the list.
         MusicAdapter adapter =

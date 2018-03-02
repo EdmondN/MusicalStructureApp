@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class LatinActivity extends AppCompatActivity {
 
@@ -17,18 +17,7 @@ public class LatinActivity extends AppCompatActivity {
         setContentView(R.layout.music_list);
 
         // Create a list of musics
-        final ArrayList<Music> musics = new ArrayList<Music>();
-        musics.add(new Music("Top 1", "La Modelo - Cardi B & Ozuna"));
-        musics.add(new Music("Top 2", "Dura - Daddy Yankee"));
-        musics.add(new Music("Top 3", "El Farsante - Ozuna"));
-        musics.add(new Music("Top 4", "Amorfoda - Bad Bunny"));
-        musics.add(new Music("Top 5", "Mi Gente - J Balvin & Willy William Feat. Beyoncé"));
-        musics.add(new Music("Top 6", "Sensualidad - Bad Bunny & Prince Royce & J Balvin"));
-        musics.add(new Music("Top 7", "Machika - Anitta, J. Balvin & Jeon"));
-        musics.add(new Music("Top 8", "Échame La Culpa - Luis Fonsi & Demi Lovato"));
-        musics.add(new Music("Top 9", "El Baño - Enrique Iglesias Feat. Bad Bunny"));
-        musics.add(new Music("Top 10", "Solita - Almighty, Bad Bunny, DJ Luian, Mambo Kingz, Ozuna & Wisin"));
-
+        final List<Music> musics = MusicDataStorage.getLatinMusic();
         // Create an {@link MusicAdapter}, whose data source is a list of {@link Music}s. The
         // adapter knows how to create list items for each item in the list.
         MusicAdapter adapter =
