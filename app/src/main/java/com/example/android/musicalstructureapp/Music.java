@@ -6,9 +6,9 @@ public class Music {
 
     private String mTrackID;
 
-    public Music(String ChartNumber, String TrackID) {
-        mChartNumber = ChartNumber;
-        mTrackID = TrackID;
+    public Music(String chartNumber, String trackID) {
+        mChartNumber = chartNumber;
+        mTrackID = trackID;
     }
 
     public String getChartNumber() {
