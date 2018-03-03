@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Set a click listener on that View
         dance.setOnClickListener(new OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
+            // The code in this method will be executed when the Dance category is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link DanceActivity}
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Set a click listener on that View
         hiphop.setOnClickListener(new OnClickListener() {
-            // The code in this method will be executed when the family category is clicked on.
+            // The code in this method will be executed when the Hiphop category is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link HiphopActivity}
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Set a click listener on that View
         pop.setOnClickListener(new OnClickListener() {
-            // The code in this method will be executed when the colors category is clicked on.
+            // The code in this method will be executed when the Pop category is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link PopActivity}
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Set a click listener on that View
         latin.setOnClickListener(new OnClickListener() {
-            // The code in this method will be executed when the phrases category is clicked on.
+            // The code in this method will be executed when the Latin category is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link LatinActivity}
@@ -77,6 +78,22 @@ public class MainActivity extends AppCompatActivity {
 
                 // Start the new activity
                 startActivity(latinIntent);
+            }
+        });
+
+        // Find the View that shows the Music Player category
+        Button musicplayer = (Button) findViewById(R.id.musicPlayer_Button);
+
+        // Set a click listener on that View
+        musicplayer.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the Music Player Button is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link Music Player Activity}
+                Intent musicplayerIntent = new Intent(MainActivity.this, PlayerActivity.class);
+
+                // Start the new activity
+                startActivity(musicplayerIntent);
             }
         });
     }

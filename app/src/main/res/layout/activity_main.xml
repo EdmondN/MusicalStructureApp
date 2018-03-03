@@ -35,5 +35,10 @@
             style="@style/LatinStyle"
             android:text="@string/latin" />
 
+        <Button
+            android:id="@+id/musicPlayer_Button"
+            android:text="@string/player"
+            style="@style/musicPlayerButton" />
+
     </LinearLayout>
 </ScrollView>

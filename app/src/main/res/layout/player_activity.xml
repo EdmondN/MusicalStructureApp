@@ -42,7 +42,7 @@
         app:srcCompat="@drawable/ic_skip_next_black_24dp" />
 
     <Button
-        android:id="@+id/home_TextView"
+        android:id="@+id/home_Button"
         style="@style/homeStyle"
         android:text="@string/home" />
 
