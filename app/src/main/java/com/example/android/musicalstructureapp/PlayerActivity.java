@@ -28,7 +28,7 @@ public class PlayerActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Toast.makeText(this, "You Are Back to The Top 10 Chart List", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.backTop10, Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -36,7 +36,7 @@ public class PlayerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.player_activity);
 
-        if(getSupportActionBar() != null) {
+        if (getSupportActionBar() != null) {
             getSupportActionBar().setHomeButtonEnabled(true);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
@@ -56,20 +56,20 @@ public class PlayerActivity extends AppCompatActivity {
                 }
             }
         }
-            // Find the View that shows the Home category
-            Button home = (Button) findViewById(R.id.home_Button);
+        // Find the View that shows the Home category
+        Button home = (Button) findViewById(R.id.home_Button);
 
-            // Set a click listener on that View
-            home.setOnClickListener(new View.OnClickListener() {
-                // The code in this method will be executed when the Home Button is clicked on.
-                @Override
-                public void onClick(View view) {
-                    // Create a new intent to open the {@link MainActivity}
-                    Intent homeIntent = new Intent(PlayerActivity.this, MainActivity.class);
+        // Set a click listener on that View
+        home.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the Home Button is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link MainActivity}
+                Intent homeIntent = new Intent(PlayerActivity.this, MainActivity.class);
 
-                    // Start the new activity
-                    startActivity(homeIntent);
-                }
-            });
+                // Start the new activity
+                startActivity(homeIntent);
+            }
+        });
     }
 }

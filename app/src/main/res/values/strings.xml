@@ -17,4 +17,5 @@
     <string name="player">Music Player</string>
     <string name="home">Home</string>
     <string name="musicList">Music Chart List</string>
+    <string name="backTop10">You Are Back to The Top 10 Chart List</string>
 </resources>
