@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class PlayerActivity extends AppCompatActivity {
@@ -49,5 +51,20 @@ public class PlayerActivity extends AppCompatActivity {
                 Toast.makeText(this, "Now playing: " + currentlyChartNumber + "\n" + currentlyTrackId, Toast.LENGTH_LONG).show();
             }
         }
+        // Find the View that shows the Home category
+        TextView home = (TextView) findViewById(R.id.home_TextView);
+
+        // Set a click listener on that View
+        home.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the phrases category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link MainActivity}
+                Intent homeIntent = new Intent(PlayerActivity.this, MainActivity.class);
+
+                // Start the new activity
+                startActivity(homeIntent);
+            }
+        });
     }
 }

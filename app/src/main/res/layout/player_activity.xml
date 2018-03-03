@@ -36,4 +36,9 @@
         app:srcCompat="@drawable/ic_skip_next_black_24dp"
         android:contentDescription="@null"/>
 
+    <TextView
+        android:id="@+id/home_TextView"
+        android:text="@string/home"
+        style="@style/homeStyle" />
+
 </RelativeLayout>

@@ -3,9 +3,9 @@
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="whiteColor">#FFFFFF</color>
+    <color name="whiteColor">#ffffff</color>
     <color name="blackColor">#000000</color>
-    <color name="DanceColor">#FF3266</color>
-    <color name="PopColor">#B2B2FF</color>
-    <color name="LatinColor">#FD8E09</color>
+    <color name="danceColor">#FF3266</color>
+    <color name="popColor">#B2B2FF</color>
+    <color name="latinColor">#FD8E09</color>
 </resources>
