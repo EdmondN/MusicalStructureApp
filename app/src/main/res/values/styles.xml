@@ -160,4 +160,16 @@
         <item name="android:textSize">20sp</item>
     </style>
 
+    <style name="listViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/love_music</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
 </resources>

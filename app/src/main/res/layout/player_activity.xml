@@ -8,6 +8,11 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/player"
+        style="@style/Top10Charts"
+        android:text="@string/player" />
+
+    <TextView
         android:id="@+id/now_playing"
         style="@style/NowPlayingStyle"
         android:text="@string/now_playing" />
@@ -15,30 +20,30 @@
     <ImageView
         android:id="@+id/imageViewPrevius"
         style="@style/PreviusImageStyle"
-        app:srcCompat="@drawable/ic_skip_previous_black_24dp"
-        android:contentDescription="@null"/>
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_skip_previous_black_24dp" />
 
     <ImageView
         android:id="@+id/imageViewPlay"
         style="@style/PlayImageStyle"
-        app:srcCompat="@drawable/ic_play_arrow_black_24dp"
-        android:contentDescription="@null"/>
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
 
     <ImageView
         android:id="@+id/imageViewPause"
         style="@style/PauseImageStyle"
-        app:srcCompat="@drawable/ic_pause_black_24dp"
-        android:contentDescription="@null"/>
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_pause_black_24dp" />
 
     <ImageView
         android:id="@+id/imageViewNext"
         style="@style/NextImageStyle"
-        app:srcCompat="@drawable/ic_skip_next_black_24dp"
-        android:contentDescription="@null"/>
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_skip_next_black_24dp" />
 
     <Button
         android:id="@+id/home_TextView"
-        android:text="@string/home"
-        style="@style/homeStyle" />
+        style="@style/homeStyle"
+        android:text="@string/home" />
 
 </RelativeLayout>
